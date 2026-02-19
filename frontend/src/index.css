@@ -1,0 +1,154 @@
+/*
+  Plain CSS (beginner-friendly)
+  -----------------------------
+  No frameworks. Just a few styles to make the UI readable.
+*/
+
+:root {
+  --bg: #0b1220;
+  --card: #111a2e;
+  --text: #e8eefc;
+  --muted: #a9b7d6;
+  --border: rgba(255, 255, 255, 0.12);
+  --accent: #7aa7ff;
+  --danger: #ff6b6b;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  background: linear-gradient(180deg, var(--bg), #070c16);
+  color: var(--text);
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 24px 16px;
+}
+
+.nav {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid var(--border);
+  background: rgba(17, 26, 46, 0.6);
+  backdrop-filter: blur(8px);
+  padding: 12px 14px;
+  border-radius: 12px;
+}
+
+.navLinks {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.brand {
+  font-weight: 700;
+  color: var(--text);
+}
+
+.card {
+  border: 1px solid var(--border);
+  background: rgba(17, 26, 46, 0.65);
+  border-radius: 12px;
+  padding: 14px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.row {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.muted {
+  color: var(--muted);
+}
+
+.error {
+  border: 1px solid rgba(255, 107, 107, 0.4);
+  background: rgba(255, 107, 107, 0.1);
+  padding: 10px;
+  border-radius: 10px;
+  color: #ffd2d2;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 6px;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  background: rgba(0, 0, 0, 0.15);
+  color: var(--text);
+  outline: none;
+}
+
+textarea {
+  min-height: 140px;
+  resize: vertical;
+}
+
+button {
+  border: 1px solid var(--border);
+  background: rgba(122, 167, 255, 0.18);
+  color: var(--text);
+  padding: 10px 12px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: rgba(122, 167, 255, 0.28);
+}
+
+.btnDanger {
+  background: rgba(255, 107, 107, 0.18);
+}
+
+.btnDanger:hover {
+  background: rgba(255, 107, 107, 0.28);
+}
+
+.btnRow {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 12px;
+}
+
+.title {
+  margin: 18px 0 6px;
+}
+
+

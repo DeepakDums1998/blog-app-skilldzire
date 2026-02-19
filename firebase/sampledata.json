@@ -1,0 +1,18 @@
+{
+    "posts": [
+      {
+        "title": "Welcome to the Personal Blog!",
+        "content": "This is a sample post you can create manually in Firestore or by using the Admin page.\n\nServerless idea (simple): You call a URL, Firebase runs your Function for you, and it reads/writes Firestore.\n\nTry editing or deleting this post from the Admin page!",
+        "author": "Admin"
+      },
+      {
+        "title": "What does serverless mean?",
+        "content": "Serverless does NOT mean there are no servers.\n\nIt means you do not manage servers yourself. Firebase runs your code (Functions) when someone calls it.\n\nYou only focus on writing small pieces of backend logic (endpoints) that run on demand.",
+        "author": "Instructor"
+      }
+    ]
+  }
+  
+  
+  
+  
